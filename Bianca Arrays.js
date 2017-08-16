@@ -100,3 +100,11 @@ box;
 	Now we know array arranges its participants numerically.
 	Also the length was printed out as 3 even there were 4 allocations. 
 	It will ignore the size property because objects do not have length value. */
+
+box['0'] = 'meow';
+box[3] = {'babyBox' : true};
+box['length'];
+//4       returns the length of 4 because box['length'] is same as box.length. length in quotes is same as dot notation.
+
+box;
+//(4) ["meow", undefined × 2, {…}]
