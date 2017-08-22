@@ -9,7 +9,7 @@ var firstVal = function(arr,func) {
 
 var firstValObj = function(arg, func) {
 	if(Array.isArray(arg)) {
-		return func(arg[0], 0, arg);
+		func(arg[0], 0, arg);
 	}
 	else {
 		for(var key in arg) {
